@@ -5,6 +5,7 @@ curl -L -O https://archive.apache.org/dist/arrow/arrow-22.0.0/apache-arrow-22.0.
 tar xvfz apache-arrow-22.0.0.tar.gz
 cd apache-arrow-22.0.0
 
+brew install boost
 brew install apache-arrow
 
 cmake -S cpp -B build \
