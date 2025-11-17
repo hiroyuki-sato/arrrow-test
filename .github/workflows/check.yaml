@@ -25,6 +25,6 @@ jobs:
     #- name: test apache arrow
     #  run: HOMEBREW_DEVELOPER=true brew test ./apache-arrow.rb
     - name: build apache arrow glib
-      run: HOMEBREW_DEVELOPER=true brew install --build-from-source ./apache-arrow-glib.rb
+      run: HOMEBREW_DEVELOPER=true brew install -v --debug --build-from-source ./apache-arrow-glib.rb
     - name: test apache arrow glib
       run: HOMEBREW_DEVELOPER=true brew test --build-from-source ./apache-arrow-glib.rb
