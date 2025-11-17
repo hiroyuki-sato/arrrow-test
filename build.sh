@@ -55,3 +55,4 @@ meson install -C c_glib.build
 
 
 cc -I /tmp/local/include/ -I /opt/homebrew/include/ -L /opt/homebrew/lib -L /tmp/local/lib -larrow -I/opt/homebrew/Cellar/glib/2.86.1/include -I/opt/homebrew/Cellar/glib/2.86.1/include/glib-2.0 -I/opt/homebrew/Cellar/glib/2.86.1/lib/glib-2.0/include -I/opt/homebrew/opt/gettext/include -I/opt/homebrew/Cellar/pcre2/10.47/include -I/Library/Developer/CommandLineTools/SDKs/MacOSX15.sdk/usr/include/ffi -L/opt/homebrew/Cellar/glib/2.86.1/lib -lgirepository-2.0 -lgobject-2.0 -lglib-2.0 -L/opt/homebrew/opt/gettext/lib -lintl -larrow-glib test.c
+./a.out
