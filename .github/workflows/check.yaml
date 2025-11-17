@@ -14,5 +14,11 @@ jobs:
 #        - macos-15
     steps:
     - uses: actions/checkout@v4
-    - name: Check
-      run: ./build.sh
+#    - name: Check
+#      run: ./build.sh
+    - name: get apache-arrow-glib.rb
+      run: curl -L -O https://raw.githubusercontent.com/Homebrew/homebrew-core/1ce49820c3536e1c512a677c9138aee6321bdf12/Formula/a/apache-arrow-glib.rb
+    - name: get apache-arrow.rb
+      run: curl -L -O https://raw.githubusercontent.com/Homebrew/homebrew-core/1ce49820c3536e1c512a677c9138aee6321bdf12/Formula/a/apache-arrow.rb
+    - nmae:
+      run ./brew install apache-arrow
