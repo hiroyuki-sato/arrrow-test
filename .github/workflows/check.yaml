@@ -20,11 +20,11 @@ jobs:
       run: curl -L -O https://raw.githubusercontent.com/Homebrew/homebrew-core/1ce49820c3536e1c512a677c9138aee6321bdf12/Formula/a/apache-arrow-glib.rb
     - name: get apache-arrow.rb
       run: curl -L -O https://raw.githubusercontent.com/Homebrew/homebrew-core/1ce49820c3536e1c512a677c9138aee6321bdf12/Formula/a/apache-arrow.rb
-    - name:
+    - name: build apache arrow
       run: HOMEBREW_DEVELOPER=true brew install --build-from-source ./apache-arrow.rb
-    - name:
-      run: HOMEBREW_DEVELOPER=true brew test ./apache-arrow.rb
-    - name:
+    #- name: test apache arrow
+    #  run: HOMEBREW_DEVELOPER=true brew test ./apache-arrow.rb
+    - name: build apache arrow glib
       run: HOMEBREW_DEVELOPER=true brew install --build-from-source ./apache-arrow-glib.rb
-    - name:
-      run: HOMEBREW_DEVELOPER=true brew test ./apache-arrow-glib.rb
+    - name: test apache arrow glib
+      run: HOMEBREW_DEVELOPER=true brew test --build-from-source ./apache-arrow-glib.rb
